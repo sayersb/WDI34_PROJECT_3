@@ -1,5 +1,6 @@
 const port = 4000;
-const dbURI = 'mongodb://localhost/WDI34_PROJECT_3';
+const env = process.env.NODE_ENV || 'dev';
+const dbURI = `mongodb://localhost/WDI34_PROJECT_3-${env}`;
 const secret = 'shh';
 
 
