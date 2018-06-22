@@ -1,4 +1,4 @@
 # Project 3
 
 ## A MEAN stack app
-- Hi there
+- Hi there, my name is Antoni
