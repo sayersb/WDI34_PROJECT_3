@@ -11,7 +11,6 @@ const placeSchema = new mongoose.Schema({
   image: {type: Number, required: true },
   type: {type: String, required: true },
   price: {type: String, required: true },
-  crew: {type: Number, required: true },
   address: {type: String},
   location: {
     lat: { type: Number, required: true },
