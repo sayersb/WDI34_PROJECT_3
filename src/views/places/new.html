@@ -1,0 +1,30 @@
+<form ng-submit="createPlace()">
+  <div class="field">
+    <label class="label" for="name">Name</label>
+    <input class="input" id="name" name="name" placeholder="Name" ng-model="data.name" />
+  </div>
+  <div class="field">
+    <label class="label" for="image">Image</label>
+    <button class="button" id="image" name="image" file-picker ng-model="data.image">Choose file</button>
+  </div>
+  <img ng-src="{{ data.image }}" ng-if="data.image" />
+  <div class="field">
+    <label class="label" for="color">Type</label>
+    <input class="input" id="color" name="color" placeholder="Colour" ng-model="data.color" />
+  </div>
+  <div class="field">
+    <label class="label" for="hp">Price</label>
+    <input class="input" id="price" name="price" placeholder="Price" ng-model="data.price" />
+  </div>
+  <div class="field">
+    <label class="label" for="address">Address</label>
+    <input class="input" id="address" name="address" placeholder="Address" ng-model="data.address" google-autocomplete update-location="updateLocation(location)" />
+  </div>
+  <div class="field">
+    <label class="label" for="crew">Location</label>
+    <input class="input" id="location" name="location" placeholder="location" ng-model="data.location" />
+  </div>
+
+  <button class="button">Submit</button>
+
+</form>
