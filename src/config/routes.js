@@ -2,7 +2,7 @@ function Router($stateprovider, $urlRouterProvider) {
   $stateprovider
     .state('home', {
       url: '/',
-      templateUrl: 'views/home.html',
+      templateUrl: './views/home.html',
       controller: 'HomeCtrl'
     })
     .state('placesIndex', {
@@ -13,29 +13,29 @@ function Router($stateprovider, $urlRouterProvider) {
     })
     .state('placesShow', {
       url: '/places/:id',
-      templateUrl: '.views/places/show.html',
+      templateUrl: './views/places/show.html',
       controller: 'PlacesShowCtrl'
     })
     .state('placesEdit', {
       url: '/places/:id/edit',
-      templateUrl: '.views/places/edit.html',
+      templateUrl: './views/places/edit.html',
       controller: 'PlacesEditCtrl'
       // resolve: { secureState }
     })
     .state('placesNew', {
       url: '/places/new',
-      templateUrl: '.views/places/new.html',
+      templateUrl: './views/places/new.html',
       controller: 'PlacesNewCtrl'
       // resolve: { secureState }
     })
     .state('login', {
       url: '/login',
-      templateUrl: 'views/auth/login.html',
+      templateUrl: './views/auth/login.html',
       controller: 'AuthLoginCtrl'
     })
     .state('register', {
       url: '/register',
-      templateUrl: 'views/auth/register.html',
+      templateUrl: './views/auth/register.html',
       controller: 'AuthRegisterCtrl'
     });
 
