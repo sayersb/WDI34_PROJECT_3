@@ -19,5 +19,19 @@ function PlacesShowCtrl($scope, $http, $state) {
       .then(res => $scope.place = res.data);
   };
 
+  $http({
+    method: 'GET',
+    url: `/api/places/${$state.params.id}`
+  })
+    .then(res => {
+      $scope.place = res.data;
+
+      return $http({
+        method: 'GET',
+        url: '/api/forecast',
+        params: { lat: $scope.place.location.lat, lng: $scope.place.location.lng }
+      });
+    })
+    .then(res => $scope.forecast = res.data);
 }
 export default PlacesShowCtrl;
