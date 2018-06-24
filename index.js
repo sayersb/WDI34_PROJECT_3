@@ -22,6 +22,6 @@ app.use(errorHandler);
 //global error handler, always need all 4 arguments, then need next in controllers   should always be last before listen to catch all errors
 
 
-app.listen(port, () => console.log(`Aye aye captain we're pulling into port ${port}`));
+app.listen(port, () => console.log(`This is the place to be, on ${port}`));
 
 module.exports = app;
