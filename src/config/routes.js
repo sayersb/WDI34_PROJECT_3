@@ -1,3 +1,19 @@
+function secureState($q, $state, $auth, $rootScope) {
+  return new $q(resolve => {
+    if($auth.isAuthenticated()) return resolve();
+
+    $rootScope.$broadcast('flashMessage', {
+      type: 'warning',
+      content: 'Please log in'
+    });
+
+    $state.go('login');
+  });
+}
+
+
+
+
 function Router($stateprovider, $urlRouterProvider) {
   $stateprovider
     .state('home', {
@@ -8,8 +24,8 @@ function Router($stateprovider, $urlRouterProvider) {
     .state('placesIndex', {
       url: '/places',
       templateUrl: './veiws/places/index.html',
-      controller: 'PlacesIndexCtrl'
-      // params:{ search: null }
+      controller: 'PlacesIndexCtrl',
+      params: { search: null }
     })
     .state('placesShow', {
       url: '/places/:id',
@@ -19,14 +35,14 @@ function Router($stateprovider, $urlRouterProvider) {
     .state('placesEdit', {
       url: '/places/:id/edit',
       templateUrl: './views/places/edit.html',
-      controller: 'PlacesEditCtrl'
-      // resolve: { secureState }
+      controller: 'PlacesEditCtrl',
+      resolve: { secureState }
     })
     .state('placesNew', {
       url: '/places/new',
       templateUrl: './views/places/new.html',
-      controller: 'PlacesNewCtrl'
-      // resolve: { secureState }
+      controller: 'PlacesNewCtrl',
+      resolve: { secureState }
     })
     .state('login', {
       url: '/login',
