@@ -23,7 +23,7 @@ function Router($stateProvider, $urlRouterProvider) {
     })
     .state('placesIndex', {
       url: '/places',
-      templateUrl: './veiws/places/index.html',
+      templateUrl: './views/places/index.html',
       controller: 'PlacesIndexCtrl',
       params: { search: null }
     })
