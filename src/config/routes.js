@@ -14,8 +14,8 @@ function secureState($q, $state, $auth, $rootScope) {
 
 
 
-function Router($stateprovider, $urlRouterProvider) {
-  $stateprovider
+function Router($stateProvider, $urlRouterProvider) {
+  $stateProvider
     .state('home', {
       url: '/',
       templateUrl: './views/home.html',
