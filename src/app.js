@@ -3,7 +3,7 @@ import '@uirouter/angularjs';
 import 'satellizer';
 import 'angular-messages';
 import 'filepicker-js';
-import 'angular-filepicker/dist/angular_filepicker';
+// import 'angular-filepicker/dist/angular_filepicker';
 
 import 'bulma';
 import './scss/style.scss';
