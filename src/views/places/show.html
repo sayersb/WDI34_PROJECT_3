@@ -14,7 +14,7 @@
     </div>
 
 
-    <h4 class="title is-4">Comments</h4>
+    <h4 class="title is-4">Reviews</h4>
     <article class="media" ng-repeat="comment in place.comments">
       <div class="media-content">
         <div class="content">
@@ -30,7 +30,7 @@
 
     <form ng-submit="createComment()" ng-if="isAuthenticated()">
       <div class="field">
-        <label class="label">Comment</label>
+        <label class="label">Write a review</label>
         <textarea class="textarea" ng-model="data.content"></textarea>
       </div>
 
@@ -50,7 +50,7 @@
         </div>
       </div>
 
-      <button class="button is-primary">Submit</button>
+      <button class="button is-info is-outlined">Submit</button>
     </form>
   </div>
 
