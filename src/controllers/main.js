@@ -1,6 +1,8 @@
 function MainCtrl($scope, $auth, $state, $rootScope, $timeout, $transitions) {
   $scope.isAuthenticated = $auth.isAuthenticated;
   $scope.navbarOpen = false;
+  $scope.currentUser = $auth.getPayload();
+  console.log($scope.currentUser);
 
   $transitions.onSuccess({}, () => {
     $scope.navbarOpen = false;

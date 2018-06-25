@@ -13,17 +13,19 @@
     <input class="input" id="type" name="type" placeholder="type" ng-model="data.type" />
   </div>
   <div class="field">
-    <label class="label" for="hp">Price</label>
-    <input class="input" id="price" name="price" placeholder="Price" ng-model="data.price" />
+    <label class="label" for="price">Price</label>
+    <input type="radio"  id="price" name="cheap" value="£" ng-model="data.price"> £<br>
+    <input type="radio" id="price" name="mid" value="££" ng-model="data.price"> ££<br>
+    <input type="radio" id="price" name="expensive" value="£££" ng-model="data.price"> £££
   </div>
   <div class="field">
     <label class="label" for="address">Address</label>
     <input class="input" id="address" name="address" placeholder="Address" ng-model="data.address" google-autocomplete update-location="updateLocation(location)" />
   </div>
-  <div class="field">
+  <!-- <div class="field">
     <label class="label" for="crew">Location</label>
     <input class="input" id="location" name="location" placeholder="location" ng-model="data.location" />
-  </div>
+  </div> -->
 
   <button class="button">Submit</button>
 
