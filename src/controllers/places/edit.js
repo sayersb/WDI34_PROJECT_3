@@ -1,5 +1,11 @@
 function PlacesEditCtrl($scope, $http, $state) {
 
+  $scope.updateLocation = function(location){
+    $scope.data.location = location;
+    $scope.$apply();
+  };
+
+
   $scope.updatePlace = function() {
     $http({
       method: 'PUT',
