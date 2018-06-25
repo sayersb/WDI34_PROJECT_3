@@ -58,6 +58,22 @@ mongoose.connect(dbURI, (err, db) => {
           rating: 4,
           author: users[0]
         }]
+      }, {
+        name: 'Genesis',
+        image: 'https://images.savoysystems.co.uk/GEN/33521.jpg',
+        type: 'Cinema',
+        price: 3,
+        address: 'E1 4UJ',
+        location: {
+          lat: 51.5211587,
+          lng: -0.0511273
+        },
+        owner: users[1],
+        comments: [{
+          content: 'All tickets a fiver on Wednesdays!',
+          rating: 4,
+          author: users[0]
+        }]
       }]);
 
     })
