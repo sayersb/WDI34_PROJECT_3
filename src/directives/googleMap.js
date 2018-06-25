@@ -28,7 +28,7 @@ function googleMap(){
         marker.setPosition($scope.location);
       });
 
-
+      
     }
   };
 }
