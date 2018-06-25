@@ -10,7 +10,7 @@ const placeSchema = new mongoose.Schema({
   name: {type: String, required: true },
   image: {type: String, required: true },
   type: {type: String, required: true },
-  price: {type: Number, required: true },
+  price: {type: String, required: true },
   address: {type: String},
   location: {
     lat: { type: Number, required: true },

@@ -16,7 +16,9 @@
   </div>
   <div class="field">
     <label class="label" for="price">Price</label>
-    <input class="input" id="price" name="price" placeholder="Price" ng-model="data.price" />
+    <input type="radio"  id="price" name="gender" value="£" ng-model="data.price"> £<br>
+    <input type="radio" id="price" name="gender" value="££" ng-model="data.price"> ££<br>
+    <input type="radio" id="price" name="gender" value="£££" ng-model="data.price"> £££
   </div>
   <div class="field">
     <label class="label" for="address">Address</label>
@@ -24,9 +26,9 @@
   </div>
   <div class="field">
 
-    <label class="label" for="location">Location</label>
+    <!-- <label class="label" for="location">Location</label>
     <input class="input" id="location" name="location" placeholder="location" ng-model="data.location" />
-  </div>
+  </div> -->
 
   <button class="button">Submit</button>
 
