@@ -26,7 +26,7 @@ mongoose.connect(dbURI, (err, db) => {
     .then(users => {
       console.log('User created');
       return Place.create([{
-        name: 'Juju/s',
+        name: 'Juju\'s',
         image: 'http://cdn.ltstatic.com/2017/April/IU843017_942long.jpg',
         type: 'Bar',
         price: 3,
