@@ -5,7 +5,8 @@ function bulmaCard() {
     templateUrl: './views/directives/bulmaCard.html',
     scope: {
       image: '=',
-      title: '='
+      title: '=',
+      type: '='
     }
   };
 }
