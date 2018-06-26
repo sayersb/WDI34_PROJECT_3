@@ -56,10 +56,6 @@
 
       <hr />
 
-      <div ng-if="!isAuthenticated()">
-        <h2>You must be signed in to review <strong>{{ place.name }}💎!</strong></h2>
-      </div>
-
       <form ng-submit="createComment()" ng-if="isAuthenticated()">
         <div class="field">
           <label class="label">Write a review</label>
@@ -93,11 +89,5 @@
 
         </div>
       </div>
-</div>
-</div>
-</div>
-
-  </div>
-</div>
 
     </div>
