@@ -29,9 +29,9 @@
 
         </div>
         <label class="label">Did you find this review helpful?</label>
-        <i title="Up Votes" ng-click="upVote(comment)" class="fa fa-arrow-circle-up fa-2x" ng-class="{true:'up', false:''}[vote=='up']"></i>
+        <i title="Up Votes" ng-click="upVote(comment)" class="fa fa-hand-o-up fa-2x" ng-class="{true:'up', false:''}[vote=='up']"></i>
         <p>{{ comment.votes.count }}</p>
-        <i title="Down Votes" ng-click="downVote(comment)" class="fa fa-arrow-circle-down fa-2x"  ng-class="{true:'down', false:''}[vote=='down']"></i>
+        <i title="Down Votes" ng-click="downVote(comment)" class="fa fa-hand-o-down fa-2x"  ng-class="{true:'down', false:''}[vote=='down']"></i>
 
         <div class="field">
           <div class="control">
