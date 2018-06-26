@@ -1,16 +1,18 @@
 <div class="columns">
 
   <div class="column">
-    <bulma-card image="place.image" title="place.name + ' ' + '⭐️'.repeat(place.avgRating)" price="data.price"></bulma-card>
-
-    <hr />
+    <bulma-card image="place.image" title="place.name + ' ' + '💎'.repeat(place.avgRating)" price="data.price"></bulma-card>
 
     <div ng-if="isAuthenticated()">
       <a ui-sref="placesEdit({ id: place._id })" class="button">Edit</a>
       <button class="button is-danger" ng-click="deletePlace()">Delete</button>
+<br>
+    </div>
 
+    <div ng-if="!isAuthenticated()">
+
+      <h2>You must be signed in to edit or delete this hidden 💎 Gem!</h2>
       <hr />
-
     </div>
 
 
@@ -22,7 +24,7 @@
           <p>
             {{ comment.content }}
           </p>
-          <small>{{ '⭐️'.repeat(comment.rating) }}</small>
+          <small>{{ '💎'.repeat(comment.rating) }}</small>
         </div>
 
         <body ng-controller="VotesCtrl">
@@ -33,6 +35,11 @@
 
 
     <hr />
+
+    <div ng-if="!isAuthenticated()">
+      <h2>You must be signed in to reveiw <strong>{{ place.name }}💎!</strong></h2>
+    </div>
+
 
     <form ng-submit="createComment()" ng-if="isAuthenticated()">
       <div class="field">
@@ -46,11 +53,11 @@
           <div class="select">
             <select ng-model="data.rating">
               <option value="">Please select</option>
-              <option value="1">⭐️</option>
-              <option value="2">⭐️⭐️</option>
-              <option value="3">⭐️⭐️⭐️</option>
-              <option value="4">⭐️⭐️⭐️⭐️</option>
-              <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+              <option value="1">💎</option>
+              <option value="2">💎💎</option>
+              <option value="3">💎💎💎</option>
+              <option value="4">💎💎💎💎</option>
+              <option value="5">💎💎💎💎💎</option>
             </select>
           </div>
         </div>
@@ -67,5 +74,4 @@
       <strong>{{forecast.summary}} ({{ forecast.temperature }}ºC)</strong>
     </div>
   </div>
-
 </div>
