@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const profile = require('../controllers/profile');
 const places = require('../controllers/places');
 const auth = require('../controllers/auth');
 const darksky = require('../controllers/darksky');
@@ -29,6 +30,10 @@ router.route('/register')
 
 router.route('/login')
   .post(auth.login);
+
+router.route('/profile')
+  .get(profile.index);
+  
 
 
 module.exports = router;

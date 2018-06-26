@@ -21,7 +21,7 @@
       <div class="navbar-menu" ng-class="{ 'is-active': navbarOpen }">
         <div class="navbar-end">
 
-          <span class="navbar-item" ng-if="isAuthenticated()">Welcome: {{ currentUser.username }}</span>
+          <span class="navbar-item" ng-if="isAuthenticated()">Welcome: <a href="#">{{ currentUser.username }}</a></span>
           <a class="navbar-item" ui-sref="placesIndex">All the places</a>
           <a class="navbar-item" ui-sref="placesNew" ng-if="isAuthenticated()">New place</a>
           <a class="navbar-item" ui-sref="login" ng-if="!isAuthenticated()">Login</a>
