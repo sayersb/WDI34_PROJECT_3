@@ -35,6 +35,7 @@ function PlacesShowCtrl($scope, $http, $state) {
     .then(res => $scope.forecast = res.data);
 
   $scope.upVote = function(comment) {
+    if($scope.vote < 1) $scope.vote++;
     comment.votes.count ++;
     $http({
       method: 'PUT',

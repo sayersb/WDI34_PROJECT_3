@@ -2,11 +2,11 @@
 
   <div class="column">
     <bulma-card image="place.image" title="place.name + ' ' + '💎'.repeat(place.avgRating)" price="data.price"></bulma-card>
-
+    <hr />
     <div ng-if="isAuthenticated()">
       <a ui-sref="placesEdit({ id: place._id })" class="button">Edit</a>
       <button class="button is-danger" ng-click="deletePlace()">Delete</button>
-      <br>
+      <hr />
     </div>
 
     <div ng-if="!isAuthenticated()">
@@ -24,20 +24,17 @@
           <p>
             {{ comment.content }}
           </p>
-
+          <label class="label">Rating</label>
           <small>{{ '💎'.repeat(comment.rating) }}</small>
-          <p>{{ comment.votes.count }}</p>
 
         </div>
-
+        <label class="label">Did you find this review helpful?</label>
         <i title="Up Votes" ng-click="upVote(comment)" class="fa fa-arrow-circle-up fa-2x" ng-class="{true:'up', false:''}[vote=='up']"></i>
-        <br>
+        <p>{{ comment.votes.count }}</p>
         <i title="Down Votes" ng-click="downVote(comment)" class="fa fa-arrow-circle-down fa-2x"  ng-class="{true:'down', false:''}[vote=='down']"></i>
-        <br>Votes: {{vote}}
 
         <div class="field">
           <div class="control">
-            <label class="label">Rating</label>
             <div class="select">
 
             </div>
