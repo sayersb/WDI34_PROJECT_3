@@ -11,7 +11,7 @@
 
     <div ng-if="!isAuthenticated()">
 
-      <h2>You must be signed in to edit or delete this hidden 💎 Gem!</h2>
+      <h2>Please <a href="http://localhost:8000/login#!/login">sign in</a> or <a href="http://localhost:8000/login#!/register">register</a> in to edit or delete this hidden 💎 Gem!</h2>
       <hr />
     </div>
 
@@ -49,7 +49,7 @@
 
 
     <div ng-if="!isAuthenticated()">
-      <h2>You must be signed in to reveiw <strong>{{ place.name }}💎!</strong></h2>
+      <h2>You must be <a href="http://localhost:8000/login#!/login">signed in</a> to reveiw <strong>{{ place.name }}💎!</strong></h2>
     </div>
 
 
@@ -99,8 +99,6 @@
       </div>
     </div>
 
-  </div>
 </div>
-
-
-  </div>
+</div>
+</div>
