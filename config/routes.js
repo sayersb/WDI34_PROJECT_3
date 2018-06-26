@@ -15,7 +15,10 @@ router.route('/places/:id')
   .delete(secureRoute, places.delete);
 
 router.post('/places/:id/comments', secureRoute, places.commentCreate);
-router.delete('/places/:id/comments/:commentId', secureRoute, places.commentDelete);
+
+router.route('/places/:id/comments/:commentId')
+  .delete(secureRoute, places.commentDelete)
+  .put(secureRoute, places.vote);
 
 router.get('/profile', secureRoute, auth.profile);
 

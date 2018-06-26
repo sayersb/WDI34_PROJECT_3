@@ -25,14 +25,12 @@ import bulmaCard from './directives/bulmaCard';
 import googleMap from './directives/googleMap';
 import googleAutocomplete from './directives/googleAutocomplete';
 import filePicker from './directives/filePicker';
-import voteApp from './directives/voteApp';
 
 angular.module('placesApi', [
   'ui.router',
   'satellizer',
   'ngMessages',
-  'angular-filepicker',
-  'voteApp'
+  'angular-filepicker'
 ])
   .config(Router)
   .config(Auth)
@@ -48,5 +46,4 @@ angular.module('placesApi', [
   .directive('bulmaCard', bulmaCard)
   .directive('googleMap', googleMap)
   .directive('googleAutocomplete', googleAutocomplete)
-  .directive('filePicker', filePicker)
-  .directive('voteApp', voteApp);
+  .directive('filePicker', filePicker);
