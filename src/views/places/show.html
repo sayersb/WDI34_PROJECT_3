@@ -29,6 +29,7 @@
           <p>{{ comment.votes.count }}</p>
 
         </div>
+      </article>
 
         <i title="Up Votes" ng-click="upVote(comment)" class="fa fa-arrow-circle-up fa-2x" ng-class="{true:'up', false:''}[vote=='up']"></i>
         <br>
@@ -43,7 +44,6 @@
               </div>
             </div>
           </div>
-        </article>
 
         <hr />
 
@@ -72,26 +72,12 @@
               <option value="5">💎💎💎💎💎</option>
             </select>
 
-        <form ng-submit="createComment()" ng-if="isAuthenticated()">
-          <div class="field">
-            <label class="label">Write a review</label>
-            <textarea class="textarea" ng-model="data.content"></textarea>
-
-          </div>
-
-          <div class="field">
-            <div class="control">
-              <label class="label">Rating</label>
-              <div class="select">
-
-              </div>
-            </div>
-          </div>
-
           <button class="button is-info is-outlined">Submit</button>
         </form>
       </div>
+
     <div class="column">
+      <hr />
       <div google-map location="place.location"></div>
 
       <div class="notification is-info">
@@ -101,6 +87,3 @@
 
   </div>
 </div>
-
-
-  </div>
