@@ -20,9 +20,9 @@
     <article class="media" ng-repeat="comment in place.comments">
       <div class="media-content">
         <div class="content">
-          <strong>{{ comment.author.username }}</strong>
+          <p><strong>{{ comment.author.username }}</strong> wrote:</p>
           <p>
-            {{ comment.content }}
+            "{{ comment.content }}"
           </p>
           <label class="label">Rating</label>
           <small>{{ '💎'.repeat(comment.rating) }}</small>
