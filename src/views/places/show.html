@@ -24,17 +24,29 @@
           <p>
             {{ comment.content }}
           </p>
+
           <small>{{ '💎'.repeat(comment.rating) }}</small>
+          <p>{{ comment.votes.count }}</p>
+
         </div>
 
-        <body ng-controller="VotesCtrl">
-          <i title="Up Votes" ng-click="changeVote(vote, 'up')" class="fa fa-arrow-circle-up fa-2x" ng-class="{true:'up', false:''}[vote=='up']"></i>
-          <br>
-          <i title="Down Votes" ng-click="changeVote(vote, 'down')" class="fa fa-arrow-circle-down fa-2x"  ng-class="{true:'down', false:''}[vote=='down']"></i>
-          <br>Votes: {{vote}}
+        <i title="Up Votes" ng-click="upVote(comment)" class="fa fa-arrow-circle-up fa-2x" ng-class="{true:'up', false:''}[vote=='up']"></i>
+        <br>
+        <i title="Down Votes" ng-click="downVote(comment)" class="fa fa-arrow-circle-down fa-2x"  ng-class="{true:'down', false:''}[vote=='down']"></i>
+        <br>Votes: {{vote}}
 
+          <div class="field">
+            <div class="control">
+              <label class="label">Rating</label>
+              <div class="select">
 
-    <hr />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <hr />
+
 
     <div ng-if="!isAuthenticated()">
       <h2>You must be signed in to reveiw <strong>{{ place.name }}💎!</strong></h2>
@@ -59,19 +71,36 @@
               <option value="4">💎💎💎💎</option>
               <option value="5">💎💎💎💎💎</option>
             </select>
+
+        <form ng-submit="createComment()" ng-if="isAuthenticated()">
+          <div class="field">
+            <label class="label">Write a review</label>
+            <textarea class="textarea" ng-model="data.content"></textarea>
+
           </div>
-        </div>
+
+          <div class="field">
+            <div class="control">
+              <label class="label">Rating</label>
+              <div class="select">
+
+              </div>
+            </div>
+          </div>
+
+          <button class="button is-info is-outlined">Submit</button>
+        </form>
       </div>
+    <div class="column">
+      <div google-map location="place.location"></div>
 
-      <button class="button is-info is-outlined">Submit</button>
-    </form>
-  </div>
-
-  <div class="column">
-    <div google-map location="place.location"></div>
-
-    <div class="notification is-info">
-      <strong>{{forecast.summary}} ({{ forecast.temperature }}ºC)</strong>
+      <div class="notification is-info">
+        <strong>{{forecast.summary}} ({{ forecast.temperature }}ºC)</strong>
+      </div>
     </div>
+
   </div>
 </div>
+
+
+  </div>

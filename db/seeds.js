@@ -40,7 +40,7 @@ mongoose.connect(dbURI, (err, db) => {
         }, {
           content: 'Best bar in London',
           rating: 5,
-          author: users[1]
+          author: users[2]
         }]
       }, {
         name: 'Campania',
