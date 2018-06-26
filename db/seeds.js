@@ -90,6 +90,22 @@ mongoose.connect(dbURI, (err, db) => {
           rating: 4,
           author: users[0]
         }]
+      }, {
+        name: 'Hackney City Farm',
+        image: 'http://2.bp.blogspot.com/-EB3KFXMO-rY/U1Ziyp3yCDI/AAAAAAAAH9k/LV3szd-hJ9M/s1600/London-Hackney-City-Farm.jpg',
+        type: 'Farm',
+        price: 1,
+        address: 'E2 8QA',
+        location: {
+          lat: 51.5316725,
+          lng: -0.0668395
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Free farm filled with all the animals you can imagine... right in the middle of the city!',
+          rating: 5,
+          author: users[0]
+        }]
       }]);
 
     })
