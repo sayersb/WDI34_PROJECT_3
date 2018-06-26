@@ -74,6 +74,22 @@ mongoose.connect(dbURI, (err, db) => {
           rating: 4,
           author: users[0]
         }]
+      }, {
+        name: 'Borough Market',
+        image: 'http://earthyphotography.com/wp-content/uploads/2012/07/120721-borough-market-london-01(pp_w768_h512).jpg',
+        type: 'Market',
+        price: 3,
+        address: 'SE1 1TL',
+        location: {
+          lat: 51.50544,
+          lng: -0.0910606
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Best food market in London',
+          rating: 4,
+          author: users[0]
+        }]
       }]);
 
     })
