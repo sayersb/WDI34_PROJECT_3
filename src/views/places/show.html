@@ -29,7 +29,6 @@
           <p>{{ comment.votes.count }}</p>
 
         </div>
-      </article>
 
         <i title="Up Votes" ng-click="upVote(comment)" class="fa fa-arrow-circle-up fa-2x" ng-class="{true:'up', false:''}[vote=='up']"></i>
         <br>
@@ -50,13 +49,13 @@
       </article>
 
     <div ng-if="!isAuthenticated()">
-      <h2>You must be <a href="http://localhost:8000/login#!/login">signed in</a> to reveiw <strong>{{ place.name }}💎!</strong></h2>
+      <h2>You must be <a href="http://localhost:8000/login#!/login">signed in</a> to review <strong>{{ place.name }}💎!</strong></h2>
     </div>
 
       <hr />
 
       <div ng-if="!isAuthenticated()">
-        <h2>You must be signed in to reveiw <strong>{{ place.name }}💎!</strong></h2>
+        <h2>You must be signed in to review <strong>{{ place.name }}💎!</strong></h2>
       </div>
 
       <form ng-submit="createComment()" ng-if="isAuthenticated()">
