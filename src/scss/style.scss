@@ -14,12 +14,16 @@
   }
 }
 
-.up-vote{
+.fa-hand-o-up {
   color: green;
 }
 
-.down-vote{
-  color:red;
+.fa-hand-o-down {
+  color: red;
+}
+
+.vote-count {
+  padding-left: 8px;
 }
 
 div.hero-body {
