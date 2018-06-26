@@ -24,6 +24,7 @@ const placeSchema = new mongoose.Schema({
 
 });
 
+
 placeSchema.virtual('avgRating')
   .get(function() {
     return Math.floor(this.comments.reduce((sum, comment) => {

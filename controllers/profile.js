@@ -25,7 +25,7 @@ function updateRoute(req, res, next) {
     .then(profile => profile.set(req.body))
     .then(profile => profile.save())
     .then(profile => res.json(profile))
-    .catch(next);
+    .catch(next); 
 }
 
 function deleteRoute(req, res, next) {

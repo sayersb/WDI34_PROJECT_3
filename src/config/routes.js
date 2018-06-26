@@ -12,8 +12,6 @@ function secureState($q, $state, $auth, $rootScope) {
 }
 
 
-
-
 function Router($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
