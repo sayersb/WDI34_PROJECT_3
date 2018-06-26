@@ -2,7 +2,7 @@
 
   <div class="column">
     <bulma-card image="place.image" title="place.name + ' ' + '💎'.repeat(place.avgRating)" price="data.price"></bulma-card>
-    <hr />
+
     <div ng-if="isAuthenticated()">
       <a ui-sref="placesEdit({ id: place._id })" class="button">Edit</a>
       <button class="button is-danger" ng-click="deletePlace()">Delete</button>
@@ -51,10 +51,6 @@
 
       <hr />
 
-      <div ng-if="!isAuthenticated()">
-        <h2>You must be signed in to review <strong>{{ place.name }}💎!</strong></h2>
-      </div>
-
       <form ng-submit="createComment()" ng-if="isAuthenticated()">
         <div class="field">
           <label class="label">Write a review</label>
@@ -88,11 +84,5 @@
 
         </div>
       </div>
-</div>
-</div>
-</div>
-
-  </div>
-</div>
 
     </div>
