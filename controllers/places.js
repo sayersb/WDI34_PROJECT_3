@@ -58,7 +58,17 @@ function commentDeleteRoute(req, res, next) {
     })
     .then(place => res.json(place))
     .catch(next);
+}
 
+function voteRoute(req, res, next) {
+  Place.findById(req.params.id)
+    .then(place => {
+      const comment = place.comments.id(req.params.commentId);
+      Object.assign(comment, req.body);
+      return place.save();
+    })
+    .then(place => res.json(place))
+    .catch(next);
 }
 
 
@@ -70,6 +80,7 @@ module.exports = {
   update: updateRoute,
   delete: deleteRoute,
   commentCreate: commentCreateRoute,
-  commentDelete: commentDeleteRoute
+  commentDelete: commentDeleteRoute,
+  vote: voteRoute
 
 };

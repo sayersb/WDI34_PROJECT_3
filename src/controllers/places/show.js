@@ -33,5 +33,25 @@ function PlacesShowCtrl($scope, $http, $state) {
       });
     })
     .then(res => $scope.forecast = res.data);
+
+  $scope.upVote = function(comment) {
+    comment.votes.count ++;
+    $http({
+      method: 'PUT',
+      url: `/api/places/${$state.params.id}/comments/${comment._id}`,
+      data: comment
+    })
+      .then((res) => $scope.place = res.data);
+  };
+
+  $scope.downVote = function(comment) {
+    comment.votes.count --;
+    $http({
+      method: 'PUT',
+      url: `/api/places/${$state.params.id}/comments/${comment._id}`,
+      data: comment
+    })
+      .then((res) => $scope.place = res.data);
+  };
 }
 export default PlacesShowCtrl;
