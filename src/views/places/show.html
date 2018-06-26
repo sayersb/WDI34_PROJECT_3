@@ -6,7 +6,7 @@
     <div ng-if="isAuthenticated()">
       <a ui-sref="placesEdit({ id: place._id })" class="button">Edit</a>
       <button class="button is-danger" ng-click="deletePlace()">Delete</button>
-<br>
+      <br>
     </div>
 
     <div ng-if="!isAuthenticated()">
@@ -35,72 +35,57 @@
         <i title="Down Votes" ng-click="downVote(comment)" class="fa fa-arrow-circle-down fa-2x"  ng-class="{true:'down', false:''}[vote=='down']"></i>
         <br>Votes: {{vote}}
 
-          <div class="field">
-            <div class="control">
-              <label class="label">Rating</label>
-              <div class="select">
+        <div class="field">
+          <div class="control">
+            <label class="label">Rating</label>
+            <div class="select">
 
-              </div>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <hr />
-
-
-    <div ng-if="!isAuthenticated()">
-      <h2>You must be signed in to reveiw <strong>{{ place.name }}💎!</strong></h2>
-    </div>
+      <hr />
 
 
-    <form ng-submit="createComment()" ng-if="isAuthenticated()">
-      <div class="field">
-        <label class="label">Write a review</label>
-        <textarea class="textarea" ng-model="data.content"></textarea>
+      <div ng-if="!isAuthenticated()">
+        <h2>You must be signed in to reveiw <strong>{{ place.name }}💎!</strong></h2>
       </div>
 
-      <div class="field">
-        <div class="control">
-          <label class="label">Rating</label>
-          <div class="select">
-            <select ng-model="data.rating">
-              <option value="">Please select</option>
-              <option value="1">💎</option>
-              <option value="2">💎💎</option>
-              <option value="3">💎💎💎</option>
-              <option value="4">💎💎💎💎</option>
-              <option value="5">💎💎💎💎💎</option>
-            </select>
 
-        <form ng-submit="createComment()" ng-if="isAuthenticated()">
-          <div class="field">
-            <label class="label">Write a review</label>
-            <textarea class="textarea" ng-model="data.content"></textarea>
+      <form ng-submit="createComment()" ng-if="isAuthenticated()">
+        <div class="field">
+          <label class="label">Write a review</label>
+          <textarea class="textarea" ng-model="data.content"></textarea>
+        </div>
 
+        <div class="field">
+          <div class="control">
+            <label class="label">Rating</label>
+            <div class="select">
+              <select ng-model="data.rating">
+                <option value="">Please select</option>
+                <option value="1">💎</option>
+                <option value="2">💎💎</option>
+                <option value="3">💎💎💎</option>
+                <option value="4">💎💎💎💎</option>
+                <option value="5">💎💎💎💎💎</option>
+              </select>
+
+              <button class="button is-info is-outlined">Submit</button>
+            </form>
           </div>
+          <div class="column">
+            <hr />
+            <div google-map location="place.location"></div>
 
-          <div class="field">
-            <div class="control">
-              <label class="label">Rating</label>
-              <div class="select">
-
-              </div>
+            <div class="notification is-info">
+              <strong>{{forecast.summary}} ({{ forecast.temperature }}ºC)</strong>
             </div>
           </div>
 
-          <button class="button is-info is-outlined">Submit</button>
-        </form>
+        </div>
       </div>
-    <div class="column">
-      <div google-map location="place.location"></div>
 
-      <div class="notification is-info">
-        <strong>{{forecast.summary}} ({{ forecast.temperature }}ºC)</strong>
-      </div>
+
     </div>
-
-  </div>
-</div>
-
-
-  </div>
