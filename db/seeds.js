@@ -106,6 +106,22 @@ mongoose.connect(dbURI, (err, db) => {
           rating: 5,
           author: users[0]
         }]
+      }, {
+        name: 'Bang Bang Oriental Foodhall',
+        image: 'http://www.highlivingbarnet.com/wp-content/uploads/2017/07/Bang-Bang-2.jpg',
+        type: 'Market',
+        price: 1,
+        address: 'NW9 0FH',
+        location: {
+          lat: 51.593471,
+          lng: -0.261697
+        },
+        owner: users[2],
+        comments: [{
+          content: 'Amazing selection of Asian cuisine, come hungry!',
+          rating: 5,
+          author: users[2]
+        }]
       }]);
 
     })
