@@ -1,7 +1,7 @@
 <div class="columns">
 
   <div class="column">
-    <bulma-card image="place.image" title="place.name + ' ' + '💎'.repeat(place.avgRating)" price="data.price"></bulma-card>
+    <bulma-card image="place.image" title="place.name + '  ' + '💎'.repeat(place.avgRating)"  type="place.type + ' ' + place.price"></bulma-card>
     <hr />
     <div ng-if="isAuthenticated()">
       <a ui-sref="placesEdit({ id: place._id })" class="button">Edit</a>
