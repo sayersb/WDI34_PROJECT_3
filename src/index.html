@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Hidden Gems</title>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdsDypPEp9X7T8qg-p41_pz_c2EYsqr8Y&libraries=places"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link data-require="fontawesome@*" data-semver="4.1.0" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
   </head>
   <body ng-controller="MainCtrl">
@@ -20,7 +21,6 @@
 
       <div class="navbar-menu" ng-class="{ 'is-active': navbarOpen }">
         <div class="navbar-end">
-
           <a class="navbar-item" ui-sref="profile" ng-if="isAuthenticated()">Welcome:{{ currentUser.username }}</a>
           <a class="navbar-item" ui-sref="placesIndex">All the places</a>
           <a class="navbar-item" ui-sref="placesNew" ng-if="isAuthenticated()">New place</a>
