@@ -186,6 +186,22 @@ mongoose.connect(dbURI, (err, db) => {
           rating: 4,
           author: users[1]
         }]
+      }, {
+        name: 'Hootananny Brixton',
+        image: 'https://www.theupcoming.co.uk/wp-content/uploads/2012/09/Hootananny.jpg',
+        type: 'Bar',
+        price: 2,
+        address: 'SW2 1DF',
+        location: {
+          lat: 51.4553793,
+          lng: -0.11325
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Late night bar and music venue, several acts a night ranging from reggae to punk',
+          rating: 5,
+          author: users[1]
+        }]
       }]);
 
     })
