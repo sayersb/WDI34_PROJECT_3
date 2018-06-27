@@ -29,7 +29,7 @@ mongoose.connect(dbURI, (err, db) => {
         name: 'Juju\'s',
         image: 'http://cdn.ltstatic.com/2017/April/IU843017_942long.jpg',
         type: 'Bar',
-        price: 3,
+        price: '££',
         address: 'E1 6QR',
         location: { lat: 51.4965546, lng: -0.2326328 },
         owner: users[0],
@@ -46,7 +46,7 @@ mongoose.connect(dbURI, (err, db) => {
         name: 'Campania',
         image: 'https://i.guim.co.uk/img/media/182a60fe758a6e9054d83f316ed61480fa44035e/0_651_4381_2629/master/4381.jpg?w=620&q=20&auto=format&usm=12&fit=max&dpr=2&s=11dc55d8266e78bf90f87db665aa0152',
         type: 'Restaurant',
-        price: 4,
+        price: '£££',
         address: 'E2 7RH',
         location: {
           lat: 51.5297036,
@@ -62,7 +62,7 @@ mongoose.connect(dbURI, (err, db) => {
         name: 'Genesis',
         image: 'https://images.savoysystems.co.uk/GEN/33521.jpg',
         type: 'Cinema',
-        price: 3,
+        price: '££',
         address: 'E1 4UJ',
         location: {
           lat: 51.5211587,
@@ -78,7 +78,7 @@ mongoose.connect(dbURI, (err, db) => {
         name: 'Borough Market',
         image: 'http://earthyphotography.com/wp-content/uploads/2012/07/120721-borough-market-london-01(pp_w768_h512).jpg',
         type: 'Market',
-        price: 3,
+        price: '££',
         address: 'SE1 1TL',
         location: {
           lat: 51.50544,
@@ -94,7 +94,7 @@ mongoose.connect(dbURI, (err, db) => {
         name: 'Hackney City Farm',
         image: 'http://2.bp.blogspot.com/-EB3KFXMO-rY/U1Ziyp3yCDI/AAAAAAAAH9k/LV3szd-hJ9M/s1600/London-Hackney-City-Farm.jpg',
         type: 'Farm',
-        price: 1,
+        price: '£',
         address: 'E2 8QA',
         location: {
           lat: 51.5316725,
@@ -110,7 +110,7 @@ mongoose.connect(dbURI, (err, db) => {
         name: 'Bang Bang Oriental Foodhall',
         image: 'http://www.highlivingbarnet.com/wp-content/uploads/2017/07/Bang-Bang-2.jpg',
         type: 'Market',
-        price: 1,
+        price: '£',
         address: 'NW9 0FH',
         location: {
           lat: 51.593471,
@@ -126,7 +126,7 @@ mongoose.connect(dbURI, (err, db) => {
         name: 'Backyard Cinema',
         image: 'https://media.timeout.com/images/103143454/630/472/image.jpg',
         type: 'Cinema',
-        price: 2,
+        price: '£££',
         address: 'SE1 6DR',
         location: {
           lat: 51.4987099,
@@ -142,7 +142,7 @@ mongoose.connect(dbURI, (err, db) => {
         name: 'Mother Clucker',
         image: 'https://smhttp-ssl-33667.nexcesscdn.net/manual/wp-content/uploads/2015/10/IMG_3554-1050x700.jpg',
         type: 'Restaurant',
-        price: 2,
+        price: '££',
         address: 'E1 6NJ',
         location: {
           lat: 51.5210851,
@@ -158,7 +158,7 @@ mongoose.connect(dbURI, (err, db) => {
         name: 'The Mayor of Scaredy Cat Town',
         image: 'http://finchinteriors.co.uk/wp-content/uploads/2014/06/finch-interiors-breakfast-club-spitalfields-2.jpg',
         type: 'Bar',
-        price: 2,
+        price: '££',
         address: 'E1 7LS',
         location: {
           lat: 51.5183722,
@@ -174,7 +174,7 @@ mongoose.connect(dbURI, (err, db) => {
         name: 'Kyoto Garden',
         image: 'https://thumbs.dreamstime.com/b/japanese-garden-london-kyoto-holland-park-uk-53662723.jpg',
         type: 'Park',
-        price: 2,
+        price: '£',
         address: 'E1 7LS',
         location: {
           lat: 51.5029922,
@@ -184,6 +184,38 @@ mongoose.connect(dbURI, (err, db) => {
         comments: [{
           content: 'Secret Japanese garden in Holland Park, hopefully you come across the Peacocks! ',
           rating: 4,
+          author: users[1]
+        }]
+      }, {
+        name: 'Hootananny Brixton',
+        image: 'https://www.theupcoming.co.uk/wp-content/uploads/2012/09/Hootananny.jpg',
+        type: 'Bar',
+        price: '£',
+        address: 'SW2 1DF',
+        location: {
+          lat: 51.4553793,
+          lng: -0.11325
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Late night bar and music venue, several acts a night ranging from reggae to punk',
+          rating: 5,
+          author: users[1]
+        }]
+      }, {
+        name: 'Netil 360',
+        image: 'http://madeinshoreditch.co.uk/wp-content/uploads/2014/07/Netil-360-2.jpg',
+        type: 'Bar',
+        price: '££',
+        address: 'E8 3RL',
+        location: {
+          lat: 51.5375831,
+          lng: -0.05771
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Rooftop bar with amazing views and a wood oven for Pizzas',
+          rating: 5,
           author: users[1]
         }]
       }]);
