@@ -154,6 +154,22 @@ mongoose.connect(dbURI, (err, db) => {
           rating: 4,
           author: users[1]
         }]
+      }, {
+        name: 'The Mayor of Scaredy Cat Town',
+        image: 'http://finchinteriors.co.uk/wp-content/uploads/2014/06/finch-interiors-breakfast-club-spitalfields-2.jpg',
+        type: 'Bar',
+        price: 2,
+        address: 'E1 7LS',
+        location: {
+          lat: 51.5183722,
+          lng: -0.0809602
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Cocktails served in this basement bar, hidden THROUGH a fridge door in the restaurant',
+          rating: 4,
+          author: users[1]
+        }]
       }]);
 
     })
