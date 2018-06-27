@@ -8,17 +8,17 @@ mongoose.connect(dbURI, (err, db) => {
   db.dropDatabase();
 
   User.create([{
-    username: 'brad',
+    username: 'Brad',
     email: 'brad@brad.co',
     password: 'pass',
     passwordConfirmation: 'pass'
   }, {
-    username: 'josh',
+    username: 'Josh',
     email: 'josh@josh.co',
     password: 'pass',
     passwordConfirmation: 'pass'
   }, {
-    username: 'ant',
+    username: 'Ant',
     email: 'ant@ant.co',
     password: 'pass',
     passwordConfirmation: 'pass'
@@ -167,6 +167,22 @@ mongoose.connect(dbURI, (err, db) => {
         owner: users[1],
         comments: [{
           content: 'Cocktails served in this basement bar, hidden THROUGH a fridge door in the restaurant',
+          rating: 4,
+          author: users[1]
+        }]
+      }, {
+        name: 'Kyoto Garden',
+        image: 'http://finchinteriors.co.uk/wp-content/uploads/2014/06/finch-interiors-breakfast-club-spitalfields-2.jpg',
+        type: 'Park',
+        price: 2,
+        address: 'E1 7LS',
+        location: {
+          lat: 51.5029922,
+          lng: -0.2046902
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Secret Japanese garden in Holland Park, hopefully you come across the Peacocks! ',
           rating: 4,
           author: users[1]
         }]
