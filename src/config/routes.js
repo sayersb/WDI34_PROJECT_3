@@ -51,6 +51,12 @@ function Router($stateProvider, $urlRouterProvider) {
       url: '/register',
       templateUrl: './views/auth/register.html',
       controller: 'AuthRegisterCtrl'
+    })
+    .state('profile', {
+      url: '/profile',
+      templateUrl: './views/profile/show.html',
+      controller: 'ProfilesShowCtrl',
+      resolve: { secureState }
     });
 
 

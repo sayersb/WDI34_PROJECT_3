@@ -20,11 +20,12 @@ import PlacesNewCtrl from './controllers/places/new';
 import PlacesEditCtrl from './controllers/places/edit';
 import AuthLoginCtrl from './controllers/auth/login';
 import AuthRegisterCtrl from './controllers/auth/register';
-
 import bulmaCard from './directives/bulmaCard';
 import googleMap from './directives/googleMap';
 import googleAutocomplete from './directives/googleAutocomplete';
 import filePicker from './directives/filePicker';
+
+import ProfilesShowCtrl from './controllers/profiles/show';
 
 angular.module('placesApi', [
   'ui.router',
@@ -43,6 +44,7 @@ angular.module('placesApi', [
   .controller('PlacesEditCtrl', PlacesEditCtrl)
   .controller('AuthLoginCtrl', AuthLoginCtrl)
   .controller('AuthRegisterCtrl', AuthRegisterCtrl)
+  .controller('ProfilesShowCtrl', ProfilesShowCtrl)
   .directive('bulmaCard', bulmaCard)
   .directive('googleMap', googleMap)
   .directive('googleAutocomplete', googleAutocomplete)
