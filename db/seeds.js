@@ -122,6 +122,38 @@ mongoose.connect(dbURI, (err, db) => {
           rating: 5,
           author: users[2]
         }]
+      }, {
+        name: 'Backyard Cinema',
+        image: 'https://media.timeout.com/images/103143454/630/472/image.jpg',
+        type: 'Cinema',
+        price: 2,
+        address: 'SE1 6DR',
+        location: {
+          lat: 51.4987099,
+          lng: -0.0985963
+        },
+        owner: users[2],
+        comments: [{
+          content: 'Variety of iconic, unusual and immersive locations both in and outdoors around London, each show is  totally unique!',
+          rating: 5,
+          author: users[2]
+        }]
+      }, {
+        name: 'Mother Clucker',
+        image: 'https://smhttp-ssl-33667.nexcesscdn.net/manual/wp-content/uploads/2015/10/IMG_3554-1050x700.jpg',
+        type: 'Restaurant',
+        price: 2,
+        address: 'E1 6NJ',
+        location: {
+          lat: 51.5210851,
+          lng: -0.07317
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Unreal tea brined, twice fried chicken',
+          rating: 4,
+          author: users[1]
+        }]
       }]);
 
     })
