@@ -14,15 +14,6 @@ describe('POST /register', () => {
       .then(() => done());
   });
 
-  it('should return a message', done => {
-    api
-      .post('/api/register')
-      .send(userData)
-      .end((err, res) => {
-        expect(res.body.message).to.eq('Thank you for registering');
-        done();
-      });
-  });
 
   it('should return a 422 response if the passwords don\'t match', done => {
     const badData = Object.assign({}, userData, { password: 'bad' });

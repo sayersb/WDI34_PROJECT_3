@@ -42,9 +42,11 @@ describe('POST /places', () => {
       });
   });
 
-  it('should return a 201 response', done => {
-    api.post('/api/places')
+  it('should return a 201 response with a token', done => {
+    api
+      .post('/api/bangers')
       .set('Authorization', `Bearer ${token}`)
+      .send(placeData[0])
       .end((err, res) => {
         expect(res.status).to.eq(201);
         done();
