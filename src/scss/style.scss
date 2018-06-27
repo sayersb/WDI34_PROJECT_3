@@ -35,3 +35,9 @@ div.hero-body {
     background-color: rgba(0,0,0,0.5);
 
 }
+
+img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  zoom: 1;
+}
