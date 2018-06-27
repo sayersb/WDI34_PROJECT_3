@@ -8,17 +8,17 @@ mongoose.connect(dbURI, (err, db) => {
   db.dropDatabase();
 
   User.create([{
-    username: 'brad',
+    username: 'Brad',
     email: 'brad@brad.co',
     password: 'pass',
     passwordConfirmation: 'pass'
   }, {
-    username: 'josh',
+    username: 'Josh',
     email: 'josh@josh.co',
     password: 'pass',
     passwordConfirmation: 'pass'
   }, {
-    username: 'ant',
+    username: 'Ant',
     email: 'ant@ant.co',
     password: 'pass',
     passwordConfirmation: 'pass'
@@ -121,6 +121,70 @@ mongoose.connect(dbURI, (err, db) => {
           content: 'Amazing selection of Asian cuisine, come hungry!',
           rating: 5,
           author: users[2]
+        }]
+      }, {
+        name: 'Backyard Cinema',
+        image: 'https://media.timeout.com/images/103143454/630/472/image.jpg',
+        type: 'Cinema',
+        price: 2,
+        address: 'SE1 6DR',
+        location: {
+          lat: 51.4987099,
+          lng: -0.0985963
+        },
+        owner: users[2],
+        comments: [{
+          content: 'Variety of iconic, unusual and immersive locations both in and outdoors around London, each show is  totally unique!',
+          rating: 5,
+          author: users[2]
+        }]
+      }, {
+        name: 'Mother Clucker',
+        image: 'https://smhttp-ssl-33667.nexcesscdn.net/manual/wp-content/uploads/2015/10/IMG_3554-1050x700.jpg',
+        type: 'Restaurant',
+        price: 2,
+        address: 'E1 6NJ',
+        location: {
+          lat: 51.5210851,
+          lng: -0.07317
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Unreal tea brined, twice fried chicken',
+          rating: 4,
+          author: users[1]
+        }]
+      }, {
+        name: 'The Mayor of Scaredy Cat Town',
+        image: 'http://finchinteriors.co.uk/wp-content/uploads/2014/06/finch-interiors-breakfast-club-spitalfields-2.jpg',
+        type: 'Bar',
+        price: 2,
+        address: 'E1 7LS',
+        location: {
+          lat: 51.5183722,
+          lng: -0.0809602
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Cocktails served in this basement bar, hidden THROUGH a fridge door in the restaurant',
+          rating: 4,
+          author: users[1]
+        }]
+      }, {
+        name: 'Kyoto Garden',
+        image: 'https://thumbs.dreamstime.com/b/japanese-garden-london-kyoto-holland-park-uk-53662723.jpg',
+        type: 'Park',
+        price: 2,
+        address: 'E1 7LS',
+        location: {
+          lat: 51.5029922,
+          lng: -0.2046902
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Secret Japanese garden in Holland Park, hopefully you come across the Peacocks! ',
+          rating: 4,
+          author: users[1]
         }]
       }]);
 
