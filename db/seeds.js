@@ -172,7 +172,7 @@ mongoose.connect(dbURI, (err, db) => {
         }]
       }, {
         name: 'Kyoto Garden',
-        image: 'http://finchinteriors.co.uk/wp-content/uploads/2014/06/finch-interiors-breakfast-club-spitalfields-2.jpg',
+        image: 'https://thumbs.dreamstime.com/b/japanese-garden-london-kyoto-holland-park-uk-53662723.jpg',
         type: 'Park',
         price: 2,
         address: 'E1 7LS',
