@@ -202,6 +202,22 @@ mongoose.connect(dbURI, (err, db) => {
           rating: 5,
           author: users[1]
         }]
+      }, {
+        name: 'Netil 360',
+        image: 'http://madeinshoreditch.co.uk/wp-content/uploads/2014/07/Netil-360-2.jpg',
+        type: 'Bar',
+        price: 2,
+        address: 'E8 3RL',
+        location: {
+          lat: 51.5375831,
+          lng: -0.05771
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Rooftop bar with amazing views and a wood oven for Pizzas',
+          rating: 5,
+          author: users[1]
+        }]
       }]);
 
     })
