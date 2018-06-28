@@ -25,6 +25,9 @@
           <p><strong>{{ comment.author.username }}</strong> wrote:</p>
           <p>
           <i>"{{ comment.content }}"</i>
+            <div ng-if="isAuthenticated()">
+              <button class="button is-danger" ng-click="deleteComment(comment)" style="margin-left:10px">Delete</button>
+            </div>
           </p>
           <label class="label">Rating</label>
           <small>{{ '💎'.repeat(comment.rating) }}</small>
