@@ -18,13 +18,17 @@ body {
   color: white;
 }
 
+.textarea {
+  background: #f0ead6;
+}
+
 .footer {
   background: #f0ead6;
   position: bottom;
 }
 
 .card {
-  border-radius: 25px;
+  border-radius: 15px;
   background: #f0ead6;
 }
 
@@ -33,10 +37,19 @@ body {
 }
 
 
-img {
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+.index {
+  img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+  img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    zoom: 1;
+  }
 }
+
 * {
 font-family: 'Quicksand', sans-serif;
 }
@@ -76,12 +89,6 @@ div.hero-body {
   .Maincontainer {
     background-color: rgba(0,0,0,0.5);
 
-}
-
-img:hover {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  zoom: 1;
 }
 
 footer.footer {
