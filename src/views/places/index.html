@@ -24,8 +24,8 @@
 
 <hr />
 
-<div class="columns is-multiline is-dark">
-  <div class="column is-one-third-desktop is-half-tablet" ng-repeat="place in places | filter: search | orderBy: sort">
+<div class="columns is-multiline">
+  <div class="column is-one-third-desktop is-half-tablet is-4by4" ng-repeat="place in places | filter: search | orderBy: sort">
 
     <a ui-sref="placesShow({ id: place._id })" class="card-pic">
 
