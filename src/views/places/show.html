@@ -56,9 +56,6 @@
     <div ng-if="!isAuthenticated()">
       <h2>You must be <a href="http://localhost:8000/login#!/login">signed in</a> to review <strong>{{ place.name }}💎!</strong></h2>
     </div>
-
-      <hr />
-
       <form ng-submit="createComment()" ng-if="isAuthenticated()">
         <div class="field">
           <label class="label">Write a review</label>

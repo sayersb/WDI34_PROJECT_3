@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #355c7d, #6c5b7b, #c06c84, #f67280, #f8b195);
+  background: linear-gradient(to bottom, #355c7d, #6c5b7b, #c06c84, #f67280,   #f8b195);
 }
 
 .navbar-menu {
@@ -26,18 +26,20 @@ body {
 .card {
   border-radius: 15px;
   background: #f0ead6;
-}
-
-.index {
-  img {
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-  }
-
-  img:hover {
+  height: 100%;
+  width: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  .card-image:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
     zoom: 1;
+  }
+}
+
+.new {
+  label {
+      color: white;
   }
 }
 
@@ -84,4 +86,12 @@ div.hero-body {
 
 footer.footer {
   color: black;
+}
+
+
+.card-image {
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
