@@ -51,6 +51,7 @@ function commentCreateRoute(req, res, next) {
 
 function commentDeleteRoute(req, res, next) {
   Place.findById(req.params.id)
+    .populate('comments.author')
     .then(place => {
       const comment = place.comments.id(req.params.commentId);
       comment.remove();

@@ -25,6 +25,9 @@
           <p><strong>{{ comment.author.username }}</strong> wrote:</p>
           <p>
           <i>"{{ comment.content }}"</i>
+            <div ng-if="isAuthenticated()">
+              <button class="button is-danger" ng-click="deleteComment(comment)" style="margin-left:10px">Delete review</button>
+            </div>
           </p>
           <label class="label">Rating</label>
           <small>{{ '💎'.repeat(comment.rating) }}</small>
@@ -75,10 +78,13 @@
                 <option value="5">💎💎💎💎💎</option>
               </select>
 
-              <button class="button is-info is-outlined">Submit</button>
+              <button class="button is-info is-outlined" style="margin-top:10px;margin-bottom:10px;">Submit</button>
+              <br>
+
             </form>
           </div>
           <div class="column">
+            <br>
             <hr />
             <div google-map location="place.location"></div>
 
