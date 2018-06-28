@@ -1,3 +1,46 @@
+body {
+  background: linear-gradient(to bottom, #355c7d, #6c5b7b, #c06c84, #f67280, #f8b195);
+}
+
+.navbar-menu {
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84, #f67280, #f8b195);
+}
+
+.navbar-brand {
+  background: #355c7d;
+}
+
+.navbar-item {
+  color: white;
+}
+
+.navbar-burger {
+  color: white;
+}
+
+.footer {
+  background: #f0ead6;
+  position: bottom;
+}
+
+.card {
+  border-radius: 25px;
+  background: #f0ead6;
+}
+
+.input {
+  background: #f0ead6;
+}
+
+
+img {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+* {
+font-family: 'Quicksand', sans-serif;
+}
+
 .map {
   height: 500px;
 }
@@ -6,7 +49,6 @@
   height: 0;
   opacity: 0;
   transition: all 1s;
-
 
   &.is-active {
     height: 65px;
