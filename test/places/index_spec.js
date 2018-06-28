@@ -40,10 +40,10 @@ describe('GET /places', () => {
           expect(place).to.include.keys([
             '_id',
             'name',
-            'artist',
-            'releaseDate',
-            'genre',
-            'album'
+            'type',
+            'price',
+            'location',
+            'address'
           ]);
         });
         done();
