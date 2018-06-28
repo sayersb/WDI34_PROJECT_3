@@ -2,16 +2,15 @@
   <div class="columns is-mobile">
     <div class="column is-10">
       <div class="field">
-        <h6>Search our site..</h6>
-        <input class="input" name="search" placeholder="Search..." ng-model="search"/>
+        <input class="input" name="search" placeholder="Search hidden gems..." ng-model="search"/>
       </div>
     </div>
     <div class="column">
       <div class="field">
         <div class="control is-expanded">
           <div class="select is-fullwidth">
-            <h6>Order by</h6>
-            <select ng-model="sort">Order by
+            <select ng-model="sort">
+              <option value="" selected disabled>Please select</option>
               <option value="type">Type</option>
               <option value="name">A - Z</option>
               <option value="-name">Z - A</option>
@@ -25,10 +24,10 @@
 
 <hr />
 
-<div class="columns is-multiline">
+<div class="columns is-multiline is-dark">
   <div class="column is-one-third-desktop is-half-tablet" ng-repeat="place in places | filter: search | orderBy: sort">
 
-    <a ui-sref="placesShow({ id: place._id })">
+    <a ui-sref="placesShow({ id: place._id })" class="card-pic">
 
       <bulma-card image="place.image" title="place.name" type="place.type" ></bulma-card>
 
