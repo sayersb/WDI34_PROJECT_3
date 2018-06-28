@@ -47,4 +47,13 @@ userSchema.methods.validatePassword = function validatePassword(password){
   return bcrypt.compareSync(password, this.password);
 };
 
+const profileSchema = new mongoose.Schema({
+  name: {type: String, required: true },
+  image: {type: String, required: true },
+  location: {
+    lat: { type: Number, required: true },
+    lng: { type: Number, required: true }
+  }
+});
+
 module.exports = mongoose.model('User', userSchema);

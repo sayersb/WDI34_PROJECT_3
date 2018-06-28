@@ -1,1 +1,45 @@
-<h1>User profile Index</h1>
+<h1>All profile's Index</h1>
+
+<form>
+  <div class="columns is-mobile">
+    <div class="column is-10">
+      <div class="field">
+        <input class="input" name="search" placeholder="Search hidden gems..." ng-model="search"/>
+      </div>
+    </div>
+    <div class="column">
+      <div class="field">
+        <div class="control is-expanded">
+          <div class="select is-fullwidth">
+            <select ng-model="sort">
+              <option value="" selected disabled>Please select</option>
+              <option value="type">Type</option>
+              <option value="name">A - Z</option>
+              <option value="-name">Z - A</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<hr />
+
+<Maincontainer class="index">
+  <div class="columns is-multiline is-dark">
+    <div class="column is-one-third-desktop is-half-tablet"   ng-repeat="place in places | filter: search | orderBy: sort">
+
+
+      <a ui-sref="placesShow({ id: place._id })" class="card-pic">
+
+
+      <bulma-card image="place.image" title="place.name" type="place.type" ></bulma-card>
+
+      </a>
+
+
+    </div>
+  </div>
+
+  <div ng-if="!isAuthenticated()">
