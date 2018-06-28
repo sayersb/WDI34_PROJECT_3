@@ -31,7 +31,7 @@ mongoose.connect(dbURI, (err, db) => {
         type: 'Bar',
         price: '££',
         address: 'E1 6QR',
-        location: { lat: 51.4965546, lng: -0.2326328 },
+        location: { lat: 51.5207005, lng: -0.0737281 },
         owner: users[0],
         comments: [{
           content: 'Worst bar in London',
@@ -44,7 +44,7 @@ mongoose.connect(dbURI, (err, db) => {
         }]
       }, {
         name: 'Campania',
-        image: 'https://i.guim.co.uk/img/media/182a60fe758a6e9054d83f316ed61480fa44035e/0_651_4381_2629/master/4381.jpg?w=620&q=20&auto=format&usm=12&fit=max&dpr=2&s=11dc55d8266e78bf90f87db665aa0152',
+        image: 'http://www.doitinlondon.co.uk/files/2016/GUEST/LAPP/campania-exterior.jpg',
         type: 'Restaurant',
         price: '£££',
         address: 'E2 7RH',
@@ -60,7 +60,7 @@ mongoose.connect(dbURI, (err, db) => {
         }]
       }, {
         name: 'Genesis',
-        image: 'https://images.savoysystems.co.uk/GEN/33521.jpg',
+        image: 'https://hirespace.com/blog/content/images/2015/03/Genesis-Cinema-5--2-.jpg',
         type: 'Cinema',
         price: '££',
         address: 'E1 4UJ',
@@ -76,7 +76,7 @@ mongoose.connect(dbURI, (err, db) => {
         }]
       }, {
         name: 'Borough Market',
-        image: 'http://earthyphotography.com/wp-content/uploads/2012/07/120721-borough-market-london-01(pp_w768_h512).jpg',
+        image: 'http://cdn.ltstatic.com/2017/October/FH865275_942long.jpg',
         type: 'Market',
         price: '££',
         address: 'SE1 1TL',
@@ -108,7 +108,7 @@ mongoose.connect(dbURI, (err, db) => {
         }]
       }, {
         name: 'Bang Bang Oriental Foodhall',
-        image: 'http://www.highlivingbarnet.com/wp-content/uploads/2017/07/Bang-Bang-2.jpg',
+        image: 'https://cdn.thenudge.com/wp-content/uploads/2017/03/bang-bang-oriental-1920x849.jpg',
         type: 'Market',
         price: '£',
         address: 'NW9 0FH',
@@ -124,7 +124,7 @@ mongoose.connect(dbURI, (err, db) => {
         }]
       }, {
         name: 'Backyard Cinema',
-        image: 'https://media.timeout.com/images/103143454/630/472/image.jpg',
+        image: 'http://theresident.wpms.greatbritishlife.co.uk/wp-content/uploads/sites/10/2016/09/Backyard-Cinema-Lost-World-.jpg',
         type: 'Cinema',
         price: '£££',
         address: 'SE1 6DR',
@@ -188,7 +188,7 @@ mongoose.connect(dbURI, (err, db) => {
         }]
       }, {
         name: 'Hootananny Brixton',
-        image: 'https://www.theupcoming.co.uk/wp-content/uploads/2012/09/Hootananny.jpg',
+        image: 'http://www.hootanannybrixton.co.uk/wp-content/uploads/2014/05/beer-garden.jpg',
         type: 'Bar',
         price: '£',
         address: 'SW2 1DF',
@@ -204,7 +204,7 @@ mongoose.connect(dbURI, (err, db) => {
         }]
       }, {
         name: 'Netil 360',
-        image: 'http://madeinshoreditch.co.uk/wp-content/uploads/2014/07/Netil-360-2.jpg',
+        image: 'https://d37219swed47g7.cloudfront.net/media/images/guides/the-london-rooftop-bar-rankings/banners/1497216187.9.jpg',
         type: 'Bar',
         price: '££',
         address: 'E8 3RL',
@@ -216,6 +216,102 @@ mongoose.connect(dbURI, (err, db) => {
         comments: [{
           content: 'Rooftop bar with amazing views and a wood oven for Pizzas',
           rating: 5,
+          author: users[1]
+        }]
+      }, {
+        name: 'Bounce',
+        image: 'https://static.designmynight.com/uploads/2017/12/G16A8035-1200x800.jpg',
+        type: 'Bar',
+        price: '££',
+        address: 'EC1N 2TD',
+        location: {
+          lat: 51.5179795,
+          lng: -0.1082477
+        },
+        owner: users[1],
+        comments: [{
+          content: '1950s-style cocktail bar and pizza restaurant with red leather booths and 17 ping pong tables. Pizzas',
+          rating: 5,
+          author: users[1]
+        }]
+      }, {
+        name: 'Coppa Club',
+        image: 'http://cdn.ltstatic.com/2017/October/NM101370_942long.jpg',
+        type: 'Bar',
+        price: '££',
+        address: 'EC3R 6AH',
+        location: {
+          lat: 51.508148,
+          lng: -0.079692
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Coppa Club is a space for eating, drinking, meeting and unwinding. Built around a central, brass bar that’s open on all-sides, Coppa Club has a raised lounge for working and winding down, a 250-cover restaurant with a marble herringbone floor, and a café with booths and a fireplace.',
+          rating: 4,
+          author: users[1]
+        }]
+      }, {
+        name: 'Pitt Cue',
+        image: 'http://www.pittcue.co.uk/gallery/PC7.jpg',
+        type: 'Restaurant',
+        price: '£££',
+        address: 'EC2M 4YP',
+        location: {
+          lat: 51.516396,
+          lng: -0.078267
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Pitt Cue has been on an incredible journey: launched as a food truck on the southbank, we evolved into a tiny bricks-and-mortar site in soho and now, finally, have matured into a full-blown restaurant with an expanded kitchen and extended bar.',
+          rating: 4,
+          author: users[1]
+        }]
+      }, {
+        name: 'Ballie Ballerson',
+        image: 'https://hirespace.imgix.net/spaces/161986/1cnn4cr5n1v.jpg?h=1080&w=1920&auto=format&fit=crop&q=40',
+        type: 'Bar',
+        price: '££',
+        address: 'EC2A 3BS',
+        location: {
+          lat: 51.525564,
+          lng: -0.080573
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Ballie Ballerson is a ball pit cocktail bar with one million balls, retro sweetie cocktails and damn sexy food - Ballie Ballerson is the ultimate adult playground to get loose.',
+          rating: 3,
+          author: users[1]
+        }]
+      }, {
+        name: 'Underbelly Festival',
+        image: 'http://www.underbellyfestival.com/images/resized/images/uploads/Site_wide_london_eye_1280x800.jpg',
+        type: 'Festival',
+        price: '£',
+        address: 'SE1 8XX',
+        location: {
+          lat: 51.5051274,
+          lng: -0.1177629
+        },
+        owner: users[1],
+        comments: [{
+          content: 'Enjoy a fun-packed festival of live entertainment and alfresco eating and drinking at Underbelly Festival in South Bank.',
+          rating: 4,
+          author: users[1]
+        }]
+      }, {
+        name: 'House of Vans',
+        image: 'https://media.timeout.com/images/103848986/image.jpg',
+        type: 'Venue',
+        price: '£',
+        address: 'SE1 8SW',
+        location: {
+          lat: 51.5005901,
+          lng: -0.1141531
+        },
+        owner: users[1],
+        comments: [{
+          content: 'It’s a place where imagination lets loose over concrete bowls, art installations, workshops and concert stages, inspiring every person who runs, rolls, or stomps through its door.',
+          rating: 4,
           author: users[1]
         }]
       }]);
