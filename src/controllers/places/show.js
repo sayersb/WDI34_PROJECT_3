@@ -19,6 +19,14 @@ function PlacesShowCtrl($scope, $http, $state) {
       .then(res => $scope.place = res.data);
   };
 
+  $scope.deleteComment = function(comment) {
+    $http({
+      method: 'DELETE',
+      url: `/api/places/${$state.params.id}/comments/${comment._id}`
+    })
+      .then(res => $scope.place = res.data);
+  };
+
   $http({
     method: 'GET',
     url: `/api/places/${$state.params.id}`
