@@ -1,14 +1,14 @@
 <div class="columns">
 
   <div class="column">
-    <bulma-card image="place.image" title="place.name + ' ' + '💎'.repeat(place.avgRating)" price="data.price"></bulma-card>
 
+    <bulma-card image="place.image" title="place.name + '  ' + '💎'.repeat(place.avgRating)"  type="place.type + ' ' + place.price"></bulma-card>
     <hr />
 
     <div ng-if="isAuthenticated()">
       <a ui-sref="placesEdit({ id: place._id })" class="button">Edit</a>
       <button class="button is-danger" ng-click="deletePlace()">Delete</button>
-      <br>
+      <hr />
     </div>
 
     <div ng-if="!isAuthenticated()">
@@ -22,24 +22,24 @@
     <article class="media" ng-repeat="comment in place.comments">
       <div class="media-content">
         <div class="content">
-          <strong>{{ comment.author.username }}</strong>
+          <p><strong>{{ comment.author.username }}</strong> wrote:</p>
           <p>
-            {{ comment.content }}
+          <i>"{{ comment.content }}"</i>
           </p>
-
+          <label class="label">Rating</label>
           <small>{{ '💎'.repeat(comment.rating) }}</small>
-          <p>{{ comment.votes.count }}</p>
 
         </div>
+        <label class="label">Did you find this review helpful?</label>
 
-        <i title="Up Votes" ng-click="upVote(comment)" class="fa fa-arrow-circle-up fa-2x" ng-class="{true:'up', false:''}[vote=='up']"></i>
-        <br>
-        <i title="Down Votes" ng-click="downVote(comment)" class="fa fa-arrow-circle-down fa-2x"  ng-class="{true:'down', false:''}[vote=='down']"></i>
-        <br>Votes: {{vote}}
+        <section class="voting-buttons">
+          <i title="Up Votes" ng-click="upVote(comment)" class="fa   fa-hand-o-up fa-2x" ng-class="{true:'up',   false:''}[vote=='up']"></i>
+          <p class="vote-count">{{ comment.votes.count }}</p>
+          <i title="Down Votes" ng-click="downVote(comment)" class="fa   fa-hand-o-down fa-2x"  ng-class="{true:'down',   false:''}[vote=='down']"></i>
+        </section>
 
         <div class="field">
           <div class="control">
-            <label class="label">Rating</label>
             <div class="select">
 
             </div>
