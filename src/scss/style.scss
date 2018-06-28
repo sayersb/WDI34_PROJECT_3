@@ -10,15 +10,11 @@ body {
   background: #355c7d;
 }
 
-.navbar-item {
+.navbar-item, .navbar-burger {
   color: white;
 }
 
-.navbar-burger {
-  color: white;
-}
-
-.textarea {
+.textarea, .input {
   background: #f0ead6;
 }
 
@@ -31,11 +27,6 @@ body {
   border-radius: 15px;
   background: #f0ead6;
 }
-
-.input {
-  background: #f0ead6;
-}
-
 
 .index {
   img {
