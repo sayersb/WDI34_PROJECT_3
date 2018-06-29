@@ -26,16 +26,28 @@ body {
 .card {
   border-radius: 15px;
   background: #f0ead6;
-  height: 100%;
-  width: 500px;
+  // height: 100%;
+  width: 100%;
   border-radius: 15px;
   overflow: hidden;
+  .card-image {
+    height: 500px;
+    position: cover;
+    // height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.index {
   .card-image:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
     zoom: 1;
   }
 }
+
 
 .new {
   label {
@@ -90,8 +102,5 @@ footer.footer {
 
 
 .card-image {
-  height: 250px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
 }

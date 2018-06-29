@@ -14,8 +14,13 @@ const routes = require('./config/routes');
 // const port = 4000; in environment now
 
 app.use(express.static(`${__dirname}/public`));
+// below bodyParser
+
 
 app.use(bodyParser.json());
+
+app.get('/*',(req, res) => res.sendFile(`${__dirname}/public/index.html`));
+
 app.use('/api', routes);
 
 app.use(errorHandler);
