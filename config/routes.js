@@ -23,7 +23,6 @@ router.route('/places/:id/comments/:commentId')
 
 router.route('/profile', secureRoute, auth.profile);
 
-
 router.get('/forecast', darksky.forecast);
 
 router.route('/register')
