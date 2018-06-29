@@ -5,7 +5,6 @@ function PlacesEditCtrl($scope, $http, $state) {
     $scope.$apply();
   };
 
-
   $scope.updatePlace = function() {
     $http({
       method: 'PUT',

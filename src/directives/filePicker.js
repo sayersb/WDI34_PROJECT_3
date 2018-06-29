@@ -6,8 +6,6 @@ function filePicker(filepickerService) {
 
       $element.bind('click', (e) => {
         e.preventDefault();
-
-
         filepickerService.pick({
           accept: 'image/*',
           maxFiles: 1,

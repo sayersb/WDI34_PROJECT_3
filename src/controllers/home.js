@@ -6,7 +6,6 @@ function HomeCtrl($scope, $state) {
   $scope.searchPlaces = function() {
     $state.go('placesIndex', { search: $scope.query });
   };
-
 }
 
 export default HomeCtrl;

@@ -4,7 +4,6 @@ function profileIndexRoute(req, res, next){
   Profile.find()
     .then(profiles => res.json(profiles))
     .catch(next);
-
 }
 
 function profileShowRoute(req, res, next){
@@ -33,9 +32,7 @@ function profileDeleteRoute(req, res, next) {
     .then(profile => profile.remove())
     .then(() => res.sendStatus(204))
     .catch(next);
-
 }
-
 
 module.exports = {
 
@@ -44,5 +41,4 @@ module.exports = {
   create: profileCreateRoute,
   update: profileUpdateRoute,
   delete: profileDeleteRoute
-
 };

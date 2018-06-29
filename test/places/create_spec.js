@@ -16,7 +16,6 @@ const placeData = {
 
 let token;
 
-
 describe('POST /places', () => {
 
   beforeEach(done => {
@@ -38,17 +37,6 @@ describe('POST /places', () => {
     api.post('/api/places')
       .end((err, res) => {
         expect(res.status).to.eq(401);
-        done();
-      });
-  });
-
-  it('should return a 201 response with a token', done => {
-    api
-      .post('/api/bangers')
-      .set('Authorization', `Bearer ${token}`)
-      .send(placeData[0])
-      .end((err, res) => {
-        expect(res.status).to.eq(201);
         done();
       });
   });
