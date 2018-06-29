@@ -26,7 +26,7 @@
 
 <Maincontainer class="index">
   <div class="columns is-multiline is-dark">
-    <div class="column is-one-third-desktop is-half-tablet"   ng-repeat="place in places | filter: search | orderBy: sort">
+    <div class="column is-one-third-desktop is-half-tablet"   ng-repeat="place in places track by place._id | filter: search | orderBy: sort ">
 
       <a ui-sref="placesShow({ id: place._id })" class="card-pic">
 

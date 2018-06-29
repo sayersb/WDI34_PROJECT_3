@@ -19,9 +19,9 @@ app.use(express.static(`${__dirname}/public`));
 
 app.use(bodyParser.json());
 
-app.get('/*',(req, res) => res.sendFile(`${__dirname}/public/index.html`));
 
 app.use('/api', routes);
+app.get('/*',(req, res) => res.sendFile(`${__dirname}/public/index.html`));
 
 app.use(errorHandler);
 //global error handler, always need all 4 arguments, then need next in controllers   should always be last before listen to catch all errors
