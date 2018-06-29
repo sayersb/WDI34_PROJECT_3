@@ -4,8 +4,6 @@ const auth = require('../controllers/auth');
 const darksky = require('../controllers/darksky');
 const secureRoute = require('../lib/secureRoute');
 
-
-
 router.route('/places')
   .get(places.index)
   .post(secureRoute, places.create);
@@ -31,6 +29,5 @@ router.route('/register')
 
 router.route('/login')
   .post(auth.login);
-
 
 module.exports = router;

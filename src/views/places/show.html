@@ -6,14 +6,14 @@
     <hr />
 
     <div ng-if="isAuthenticated()">
-      <a ui-sref="placesEdit({ id: place._id })" class="button">Edit</a>
+      <a ui-sref="placesEdit({ id: place._id })" class="button is-primary is-outlined">Edit</a>
       <button class="button is-danger" ng-click="deletePlace()">Delete</button>
       <hr />
     </div>
 
     <div ng-if="!isAuthenticated()">
 
-      <h2>Please <a href="http://localhost:8000/login#!/login">sign in</a> or <a href="http://localhost:8000/login#!/register">register</a> in to edit or delete this hidden 💎 Gem!</h2>
+      <h2>Please <a ui-sref="login">sign in</a> or <a ui-sref="register">register</a> in to edit or delete this hidden 💎 Gem!</h2>
       <hr />
     </div>
 
@@ -54,7 +54,7 @@
       </article>
 
     <div ng-if="!isAuthenticated()">
-      <h2>You must be <a href="http://localhost:8000/login#!/login">signed in</a> to review <strong>{{ place.name }}💎!</strong></h2>
+      <h2>You must be <a ui-sref="login">signed in</a> to review <strong>{{ place.name }}💎!</strong></h2>
     </div>
       <form ng-submit="createComment()" ng-if="isAuthenticated()">
         <div class="field">

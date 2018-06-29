@@ -39,6 +39,4 @@ app.controller('MainCtrl', function ($scope) {
   $scope.vote = 0;
 });
 
-
-
 export default MainCtrl;

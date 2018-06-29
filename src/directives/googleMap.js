@@ -10,7 +10,6 @@ function googleMap(){
     },
     link($scope, $element) {
 
-
       $scope.$watch('location', () => console.log($scope.location));
       const map =  new google.maps.Map($element[0], {
         zoom: 14,
@@ -94,7 +93,6 @@ function googleMap(){
             stylers: [{color: '#17263c'}]
           }
         ]
-
       });
 
       const icon = {
@@ -103,7 +101,6 @@ function googleMap(){
         origin: new google.maps.Point(0,0), // origin
         anchor: new google.maps.Point(0, 0)
       };
-
 
       const marker =  new google.maps.Marker({
         map: map,
@@ -116,8 +113,6 @@ function googleMap(){
         map.setCenter($scope.location);
         marker.setPosition($scope.location);
       });
-
-
     }
   };
 }

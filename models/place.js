@@ -21,9 +21,7 @@ const placeSchema = new mongoose.Schema({
   },
   comments: [ commentSchema ],
   owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
-
 });
-
 
 placeSchema.virtual('avgRating')
   .get(function() {

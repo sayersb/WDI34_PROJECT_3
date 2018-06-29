@@ -4,14 +4,12 @@ import 'satellizer';
 import 'angular-messages';
 import 'filepicker-js';
 import 'angular-filepicker/dist/angular_filepicker';
-
 import 'bulma';
 import './scss/style.scss';
 
 import Router from './config/routes';
 import Auth from './config/satellizer';
 import Upload from './config/filepicker';
-
 import MainCtrl from './controllers/main';
 import HomeCtrl from './controllers/home';
 import PlacesIndexCtrl from './controllers/places/index';
@@ -24,7 +22,6 @@ import bulmaCard from './directives/bulmaCard';
 import googleMap from './directives/googleMap';
 import googleAutocomplete from './directives/googleAutocomplete';
 import filePicker from './directives/filePicker';
-
 import ProfilesShowCtrl from './controllers/profiles/show';
 
 angular.module('placesApi', [

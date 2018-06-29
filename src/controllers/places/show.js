@@ -62,4 +62,5 @@ function PlacesShowCtrl($scope, $http, $state) {
       .then((res) => $scope.place = res.data);
   };
 }
+
 export default PlacesShowCtrl;
