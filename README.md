@@ -28,6 +28,8 @@ The application has been deployed on [Heroku](https://worldcuppredictor.herokuap
 
 After being assigned the group we decided to spend some time thinking about ideas individually, then having a group discussion about each of our top three picks. We quickly came to an agreement that the app would be a travel app, showcasing 'hidden gems' around the world. As a group of three Londoners it was clear the app should be focused primarily in London to start, with the possibility of adding more cities later.
 
+We used Trello to help us organize the allocation of the work load, starting with the wireframing (using wireframe.cc). W
+This was the first project bringing in outside API's, we all wanted to showcase this with use of the Google Maps Api to help pinpoint hidden gem locations on a map for the users.
 
 
 
