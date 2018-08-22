@@ -31,7 +31,6 @@ After being assigned the group we decided to spend some time thinking about idea
 
 
 
-
 ## Issues
 
   * This was the first collaborative project for all three members of my group, leading to some issues at the beginning of the build process with merges on GitHub. 
@@ -39,4 +38,13 @@ After being assigned the group we decided to spend some time thinking about idea
   * This was the first collaborative project for all three members of my group, leading to some issues at the beginning of the build process with merges on GitHub.
 
   
+  
+##  Other GA Project Repositories
+
+  * 1st: [Chain Game](https://github.com/sayersb/project-1-wdi)
+
+  * 2nd: [World Cup Predictor App](https://github.com/sayersb/project-2-wdi)
+
+  * 4th: [ABC Events App](https://github.com/sayersb/WDI-PROJECT-4)
+
   
