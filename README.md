@@ -32,8 +32,10 @@ The application has been deployed on [Heroku](https://hidden-gems-api.herokuapp.
 
 After being assigned the group we decided to spend some time thinking about ideas individually, then having a group discussion about each of our top three picks. We quickly came to an agreement that the app would be a travel app, showcasing 'hidden gems' around the world. As a group of three Londoners it was clear the app should be focused primarily in London to start, with the possibility of adding more cities later.
 
-We used Trello to help us organize the allocation of the work load, starting with the wireframing (using wireframe.cc). We agreed upon the models and data we would use for the locations and users, then assigned each page to be built amongst the team. 
-This was the first project bringing in outside API's, we all wanted to showcase this with use of the Google Maps Api to help pinpoint hidden gem locations on a map for the users.
+We used Trello to help us organize the allocation of the work load, starting with the wireframing (using wireframe.cc). Having agreed upon the models and data we would use for the locations and users, we then assigned each page to be built amongst the team in order to achieve our MVP. This was the first project bringing in outside API's, we all wanted to showcase this with use of the Google Maps Api to help pinpoint hidden gem locations on a map for the users. The Filepicker API was also implemented in order for users to upload their own images for a hidden gem location easily.
+
+We wanted users to be able to comment(review) on the locations as well as rate them on a scale from 1-5, with an average rating for each location also visible. These features were implemented in the time we planned to complete our MVP, leaving ourselves more time towards the end for debugging and styling than the previous projects.
+
 
 
 
