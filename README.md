@@ -6,6 +6,7 @@
 
 ## Intro
 
+Technologies implemented : 
 
 
 | JavaScript(ECMAScript6)        | HTML5           | SASS  |
