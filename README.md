@@ -10,7 +10,7 @@
 
 | JavaScript(ECMAScript6)        | HTML5           | SASS  |
 | ------------- |:-------------:| -----:|
-| angular      | Express.js | MongoDB |
+| Angular      | Express.js | MongoDB |
 | Mongoose      | Node.js      |   Yarn |
 | Bulma |   Filepicker-js   |    Webpack |
 | jsonwebtoken | bcrypt     |    body-parser |
@@ -24,6 +24,9 @@ The application has been deployed on [Heroku](https://abc-events.herokuapp.com)
 
 
 ## Build Process 
+
+After being assigned the group we decided to spend some time thinking about ideas individually, then having a group discussion about each of our top three picks. We quickly came to an agreement that the app would be a travel app, showcasing 'hidden gems' around the world. As a group of three Londoners it was clear the app should be focused primarily in London to start, with the possibility of adding more cities later.
+
 
 
 
