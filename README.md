@@ -8,15 +8,31 @@
 
 
 
-| JavaScript(ECMAScript6)        | HTML5           | CSS3  |
+| JavaScript(ECMAScript6)        | HTML5           | SASS  |
 | ------------- |:-------------:| -----:|
-| EJS      | Express.js | MongoDB |
+| angular      | Express.js | MongoDB |
 | Mongoose      | Node.js      |   Yarn |
-| Bulma |   method-override   |    Morgan |
-| Session Authentication | bcrypt     |    body-parser |
+| Bulma |   Filepicker-js   |    Webpack |
+| jsonwebtoken | bcrypt     |    body-parser |
+| bluebird | Request-Promise     |    babel |
+| chai | mocha     |    satellizer |
+| supertest | sass-loader     |    Trello |
 
 The application has been deployed on [Heroku](https://abc-events.herokuapp.com) 
 
 *Please be aware that Heroku apps go to sleep after 30 mins of inactivity and may take a little time to load*
 
+
 ## Build Process 
+
+
+
+
+## Issues
+
+  * This was the first collaborative project for all three members of my group, leading to some issues at the beginning of the build process with merges on GitHub. 
+  
+  * This was the first collaborative project for all three members of my group, leading to some issues at the beginning of the build process with merges on GitHub.
+
+  
+  
