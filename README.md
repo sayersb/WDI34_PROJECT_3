@@ -15,7 +15,7 @@
 | Bulma |   method-override   |    Morgan |
 | Session Authentication | bcrypt     |    body-parser |
 
-The application has been deployed on [Heroku](HTTPS://ABC-EVENTS.HEROKUAPP.COM/) 
+The application has been deployed on [Heroku](https://abc-events.herokuapp.com) 
 
 *Please be aware that Heroku apps go to sleep after 30 mins of inactivity and may take a little time to load*
 
