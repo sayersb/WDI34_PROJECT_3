@@ -19,7 +19,7 @@ Technologies implemented :
 | chai | mocha     |    satellizer |
 | supertest | sass-loader     |    Trello |
 
-The application has been deployed on [Heroku](https://abc-events.herokuapp.com) 
+The application has been deployed on [Heroku](https://worldcuppredictor.herokuapp.com) 
 
 *Please be aware that Heroku apps go to sleep after 30 mins of inactivity and may take a little time to load*
 
