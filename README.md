@@ -4,7 +4,9 @@
 
 ## HIDDEN GEMS - MEAN stack app - Collaborative Project
 
+
 ## Intro
+
 
 My third project on the WDI course, the first team project with the view to creating a MEAN(MongoDB, Express.js, Angular.js & Node.js) stack app. We were given one week to devise and build the application that showcases 'hidden gems' in London for visitors.
 
@@ -44,6 +46,7 @@ We wanted users to be able to comment(review) on the locations as well as rate t
   * This was the first collaborative project for all three members of my group, leading to some issues at the beginning of the build process with merges on GitHub. 
   
   * The repository was created by a team member who wasn't the project manager, so after this was forked and pulled from the new members repository we encountered new errors with merges that slowed the build process down.
+
 
   
   
