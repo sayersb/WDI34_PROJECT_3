@@ -2,9 +2,11 @@
 
 ![image](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-## HIDDEN GEMS - A MEAN stack app
+## HIDDEN GEMS - A MEAN stack app - Collaborative Project
 
 ## Intro
+
+My third project on the WDI course, the first team project with the view to creating a MEAN(MongoDB, Express.js, Angular.js & Node.js) stack app. We were given one week to devise and build the application that showcases 'hidden gems' in London for visitors.
 
 Technologies implemented : 
 
@@ -18,6 +20,8 @@ Technologies implemented :
 | bluebird | Request-Promise     |    babel |
 | chai | mocha     |    satellizer |
 | supertest | sass-loader     |    Trello |
+| wireframe.cc | Heroku     |    Trello |
+
 
 The application has been deployed on [Heroku](https://hidden-gems-api.herokuapp.com) 
 
