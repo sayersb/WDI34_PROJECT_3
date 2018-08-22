@@ -11,9 +11,9 @@ My third project on the WDI course, the first team project with the view to crea
 Technologies implemented : 
 
 
-| JavaScript(ECMAScript6)        | HTML5           | SASS  |
+| JavaScript(ECMAScript6)        | Angular.js          | SASS  |
 | ------------- |:-------------:| -----:|
-| Angular      | Express.js | MongoDB |
+| HTML5      | Express.js | MongoDB |
 | Mongoose      | Node.js      |   Yarn |
 | Bulma |   Filepicker-js   |    Webpack |
 | jsonwebtoken | bcrypt     |    body-parser |
