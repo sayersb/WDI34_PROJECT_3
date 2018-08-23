@@ -13,7 +13,7 @@ My third project on the WDI course, the first team project with the view to crea
 Technologies implemented : 
 
 
-| JavaScript(ECMAScript6)        | Angular.js          | SASS  |
+| JavaScript(ECMAScript6)        | AngularJS          | SASS  |
 | ------------- |:-------------:| -----:|
 | HTML5      | Express.js | MongoDB |
 | Mongoose      | Node.js      |   Yarn |
@@ -22,7 +22,7 @@ Technologies implemented :
 | bluebird | Request-Promise     |    babel |
 | chai | mocha     |    satellizer |
 | supertest | sass-loader     |    Trello |
-| wireframe.cc | Heroku     |    Trello |
+| wireframe.cc | Heroku     |    Slack |
 
 
 The application has been deployed on [Heroku](https://hidden-gems-api.herokuapp.com) 
@@ -36,8 +36,9 @@ After being assigned the group we decided to spend some time thinking about idea
 
 We used Trello to help us organize the allocation of the work load, starting with the wireframing (using wireframe.cc). Having agreed upon the models and data we would use for the locations and users, we then assigned each page to be built amongst the team in order to achieve our MVP. This was the first project bringing in outside API's, we all wanted to showcase this with use of the Google Maps Api to help pinpoint hidden gem locations on a map for the users. The Filepicker API was also implemented in order for users to upload their own images for a hidden gem location easily.
 
-We wanted users to be able to comment(review) on the locations as well as rate them on a scale from 1-5, with an average rating for each location also visible. These features were implemented in the time we planned to complete our MVP, leaving ourselves more time towards the end for debugging and styling than the previous projects.
 
+
+We wanted users to be able to comment(review) on the locations as well as rate them on a scale from 1-5, with an average rating for each location also visible. These features were implemented in the time we planned to complete our MVP, leaving ourselves more time towards the end for debugging and styling than the previous projects. Overall we were pleased with the final product and worked well as a team, prompting all members to choose a collaborative project for the final app made on the course.
 
 
 
@@ -46,7 +47,8 @@ We wanted users to be able to comment(review) on the locations as well as rate t
   * This was the first collaborative project for all three members of my group, leading to some issues at the beginning of the build process with merges on GitHub. 
   
   * The repository was created by a team member who wasn't the project manager, so after this was forked and pulled from the new members repository we encountered new errors with merges that slowed the build process down.
-
+  
+  * We spent time working on a user profile page, showcasing all the personal user information including posts, reviews and likes. This feature was not fully implemented due to the idea arising with only a couple of days left to finish and deploy the app.
 
   
   
