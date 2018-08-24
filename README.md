@@ -4,7 +4,7 @@
 
 ## HIDDEN GEMS - MEAN stack app - Collaborative Project
 
-![hg](https://media.giphy.com/media/2t9y7rGuAP02hSxtPt/giphy.gif)
+![hg](https://github.com/sayersb/WDI34_PROJECT_3/blob/master/hiddengems.gif?raw=true)
 
 
 
