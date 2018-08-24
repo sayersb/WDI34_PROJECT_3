@@ -4,7 +4,8 @@
 
 ## HIDDEN GEMS - MEAN stack app - Collaborative Project
 
-![image](https://imgur.com/1ZmPeXc)
+
+![image](https://imgur.com/h8hb5Xp)
 
 
 ## Intro
