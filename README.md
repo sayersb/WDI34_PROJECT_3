@@ -48,11 +48,22 @@ MVP.
 
 ![image](https://github.com/sayersb/WDI34_PROJECT_3/blob/master/Gems%20Trello.png?raw=true)
 
-This was the first project bringing in outside API's, we all wanted to showcase this with use of the Google Maps Api to help pinpoint hidden gem locations on a map for the users. The Filepicker API was also implemented in order for users to upload their own images for a hidden gem location easily.
+This was the first project bringing in outside API's, we all wanted to showcase this with use of the Google Maps API (shown in the image below) to help pinpoint hidden gem locations on a map for the users. The Filepicker API was also implemented in order for users to upload their own images for a hidden gem location easily.
 
 
+![image](https://github.com/sayersb/WDI34_PROJECT_3/blob/master/Google%20Maps%20API.png?raw=true)
 
-We wanted users to be able to comment(review) on the locations as well as rate them on a scale from 1-5, with an average rating for each location also visible. These features were implemented in the time we planned to complete our MVP, leaving ourselves more time towards the end for debugging and styling than the previous projects. Overall we were pleased with the final product and worked well as a team, prompting all members to choose a collaborative project for the final app made on the course.
+Having learnt about the seeding process since the previous project it was clear that they would be important in testing the functionality and design aspects of the app. The seeds included information on the places as well as ratings and comments for users. An example can be seen below : 
+
+![image](https://github.com/sayersb/WDI34_PROJECT_3/blob/master/Seeds.png?raw=true)
+
+We wanted users to be able to comment(review) on the locations as well as rate them on a scale from 1-5, with an average rating for each location also visible. These features were implemented in the time we planned to complete our MVP, leaving ourselves more time towards the end for debugging and styling than the previous projects. We managed to implement our own tests with help from Mocha and Chai, an example of which can be seen in the image below : 
+
+
+![image](https://github.com/sayersb/WDI34_PROJECT_3/blob/master/Test.png?raw=true)
+
+
+Overall we were pleased with the final product and worked well as a team, prompting all members to choose a collaborative project for the final app made on the course. 
 
 
 
